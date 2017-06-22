@@ -12,6 +12,7 @@ before_install:
 script: 
   - qmake -o Release/Makefile
   - cd Release
+  - cat Makefile
   - make
   - cd ..
 
