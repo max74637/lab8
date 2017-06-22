@@ -1,0 +1,17 @@
+sudo: required
+language: c++
+os:
+  - linux
+compiler: 
+  - g++
+
+before_install:
+  - sudo apt-get install libssl-dev
+  - sh scripts/install-libprogbase.sh
+
+script: 
+  - qmake -o Release/Makefile
+  - cd Release
+  - make
+  - cd ..
+
