@@ -3,7 +3,7 @@ language: cpp
 os:
   - linux
 compiler: 
-  - g++
+  - gcc
 
 before_install:
   - sudo apt-get install libssl-dev
