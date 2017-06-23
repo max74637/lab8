@@ -8,12 +8,10 @@ compiler:
 before_install:
   - sudo apt-get install libssl-dev
   - sh scripts/install-libprogbase.sh
-  - sudo add-apt-repository --yes ppa:beineri/opt-qt551-trusty
-  - sudo apt-get update
+  - sudo apt-get install -y qt5-default qttools5-dev-tools
 
 script: 
-  - source /opt/qt55/bin/qt55-env.sh
-  - /opt/qt55/bin/qmake -o Release/Makefile
+  - qmake -o Release/Makefile
   - cd Release
   - cat Makefile
   - make
