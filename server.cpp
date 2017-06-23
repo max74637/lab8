@@ -32,7 +32,7 @@
 
 #define SERVER_NAME          "lab8"
 
-#define DEVELOPER_NAME       "Maxim Sysoev"
+#define DEVELOPER_NAME       "Maxim Susoev"
 
 #define SERVER_INFO          "{ "                                 \
                                  "\"title\": \"%s\", "            \
