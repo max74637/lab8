@@ -1,3 +1,7 @@
+/** @file
+    @brief Server class implementation
+*/
+
 #include <stdio.h>
 #include <QUrl>
 #include <QFile>

@@ -1,3 +1,7 @@
+/** @file
+    @brief Main entry point
+*/
+
 #include "server.h"
 
 int main()

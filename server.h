@@ -1,5 +1,5 @@
 /** @file
-    @brief Some text about server.h
+    @brief Server class header
 */
 
 #ifndef SERVER_H
@@ -12,30 +12,54 @@
 
 /**
     @class Server
-    @brief about Server
+    @brief implements lab8 tasks
 */
 class Server
 {
 public:
+    /**
+        @brief Server constructor
+    */
     Server();
+    /**
+        @brief Server destructor
+    */
     ~Server();
 
     /**
-        @brief Start
+        @brief Start Server listener
     */
     void Start();
 
 protected:
     /**
-        @brief getResponse
-        @param request - about request
-        @param currentTime - about getResponse
+        @brief Get Server response
+        @param request - HTTP request from client
+        @param currentTime - current server time
     */
     QByteArray getResponse(QByteArray request, QTime currentTime);
+    /**
+        @brief Get all favorites
+    */
     QJsonDocument getFavorites();
+    /**
+        @brief Get favorites by params
+        @param key - favorite key
+        @param value - favorite value of key
+    */
     QJsonDocument getFavorites(QString key, QString value);
+    /**
+        @brief Get favorite by id
+        @param id - favorite id
+    */
     QJsonDocument getFavorite(int id);
+    /**
+        @brief Get file information
+    */
     QJsonDocument getFile();
+    /**
+        @brief Get file number count and minimal bumber
+    */
     QJsonDocument getFileData();
 };
 
