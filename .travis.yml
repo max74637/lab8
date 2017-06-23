@@ -8,11 +8,11 @@ compiler:
 before_install:
   - sudo apt-get install libssl-dev
   - sh scripts/install-libprogbase.sh
-  - sudo add-apt-repository --yes ppa:beineri/opt-qt59-trusty
+  - sudo add-apt-repository --yes ppa:beineri/opt-qt511-trusty
   - sudo apt-get update -qq
 
 install:
-  - sudo apt-get install -qq qt59-meta-full ; source /opt/qt59/bin/qt59-env.sh ; export QTHOME=/opt/qt59 ;
+  - sudo apt-get install -qq qt51-meta-full ; source /opt/qt51/bin/qt51-env.sh ; export QTHOME=/opt/qt51 ;
 
 script: 
   - qmake -o Release/Makefile
