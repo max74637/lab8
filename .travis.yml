@@ -8,9 +8,14 @@ compiler:
 before_install:
   - sudo apt-get install libssl-dev
   - sh scripts/install-libprogbase.sh
+  - sudo add-apt-repository --yes ppa:beineri/opt-qt551-trusty
+  - sudo apt-get update -qq
+
+install:
+  - sudo apt-get -y install qt55[QTPACKAGE]
 
 script: 
-  - qmake -o Release/Makefile
+  - /opt/qt55/bin/qmake -o Release/Makefile
   - cd Release
   - cat Makefile
   - make
