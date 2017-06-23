@@ -8,8 +8,8 @@ compiler:
 before_install:
   - sudo apt-get install libssl-dev
   - sh scripts/install-libprogbase.sh
-  - sudo add-apt-repository ppa:beineri/opt-qt551-trusty
-  - sudo apt-get update -qq
+  - sudo add-apt-repository --yes ppa:beineri/opt-qt551-trusty
+  - sudo apt-get update
 
 script: 
   - source /opt/qt55/bin/qt55-env.sh
