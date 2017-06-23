@@ -1,18 +1,61 @@
 {
+
   "favorites": [
     {
       "id": 0,
-      "author": "author 0",
-      "name": "name 0",
-      "album": "album 0",
-      "year": 1970
+      "author": "ABBA",
+      "name": "Andante, Andante",
+      "album": "Super Trouper",
+      "year": 1980
     },
     {
       "id": 1,
-      "author": "author 1",
-      "name": "name 1",
-      "album": "album 1",
-      "year": 1971
+      "author": "ABBA",
+      "name": "Happy New Year",
+      "album": "Super Trouper",
+      "year": 1980
+    },
+    {
+      "id": 2,
+      "author": "ABBA",
+      "name": "The Winner Takes It All",
+      "album": "Super Trouper",
+      "year": 1980
+    },
+    {
+      "id": 3,
+      "author": "ABBA",
+      "name": "Money, Money, Money",
+      "album": "Arrival",
+      "year": 1976
+    },
+    {
+      "id": 4,
+      "author": "ABBA",
+      "name": "Arrival",
+      "album": "Arrival",
+      "year": 1976
+    },
+    {
+      "id": 5,
+      "author": "Boney M.",
+      "name": "No Woman, No Cry",
+      "album": "Take the Heat off Me",
+      "year": 1976
+    },
+    {
+      "id": 6,
+      "author": "Boney M.",
+      "name": "Sunny",
+      "album": "Take the Heat off Me",
+      "year": 1976
+    },
+    {
+      "id": 1,
+      "author": "Boney M.",
+      "name": "White Christmas",
+      "album": "Christmas Album",
+      "year": 1981
     }
   ]
 }
